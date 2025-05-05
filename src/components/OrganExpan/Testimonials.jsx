@@ -821,7 +821,7 @@ function Testimonials({ image, type }) {
                 /
               </p>
               <div className="!text-gray-600 !mt-1">
-                <p className="w-full md:w-3/4 lg:w-1/2">
+                <p className="w-full md:w-3/4 lg:w-1/2  benefits-card">
                   {currentBenefits.description}
                 </p>
               </div>
@@ -840,13 +840,13 @@ function Testimonials({ image, type }) {
                   key={index}
                 >
                   <p
-                    className={`!text-2xl md:!text-3xl lg:!text-4xl !font-light ${
+                    className={`!text-2xl md:!text-3xl lg:!text-4xl !font-medium ${
                       bgColors[index % 3] === "bg-[#022759]"
                         ? "!text-white"
                         : bgColors[index % 3] === "bg-[#D9EF78]"
                         ? "!text-gray-800"
                         : "!text-gray-800"
-                    } group-hover:!text-white`}
+                    } group-hover:!text-white benefits-card`}
                   >
                     {item.title}
                   </p>
@@ -857,7 +857,7 @@ function Testimonials({ image, type }) {
                         : bgColors[index % 3] === "bg-[#D9EF78]"
                         ? "!text-gray-800"
                         : "!text-gray-800"
-                    } group-hover:!text-white !font-light text-sm md:text-base`}
+                    } group-hover:!text-white !font-medium text-sm md:text-base benefits-card`}
                   >
                     {item.description}
                   </p>
